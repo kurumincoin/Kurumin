@@ -74,7 +74,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 
 //TODO Put here the name of your currency
 const char     CRYPTONOTE_NAME[]                             = "narutocoin";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "013c01ff000108029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121014436a949fcab75f6b6ec6a31c22364c1dce59e60a8d4f5beb2f35cedf791814f";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "013c01ff000108029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121018ca9eab9fffe58736b12352d8e03233ab11713bdea88b28eb7ec9eab23a40673";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
@@ -106,7 +106,7 @@ const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "545f4dd26ff17c9f
 
 //TODO Add here your network seed nodes| jesse, here
 const std::initializer_list<const char*> SEED_NODES = {
-  //"your_seed_ip1.com:8080",
+  "18.221.58.255:18431",
   //"your_seed_ip2.com:8080",
 };
 
