@@ -74,7 +74,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 
 //TODO Put here the name of your currency
 const char     CRYPTONOTE_NAME[]                             = "narutocoin";
-const char GENESIS_COINBASE_TX_HEX[]                         = "";
+const char GENESIS_COINBASE_TX_HEX[]                         = "013c01ff000194d6dfe592e901029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101ae595103ac527ec43982c58fd9b1ebd50a6cb052c0d53ea71fe279ffad872b70";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
