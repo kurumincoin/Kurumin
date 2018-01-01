@@ -24,7 +24,7 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 //TODO Specify total number of available coins
 //TODO ((uint64_t)(-1)) equals to 18446744073709551616 coins
 //TODO or you can define number explicitly UINT64_C(858986905600000000)
-const uint64_t MONEY_SUPPLY                                  = UINT64_C(2100000000000000000);
+const uint64_t MONEY_SUPPLY                                  = UINT64_C(10000000000000000000);
 const unsigned EMISSION_SPEED_FACTOR                         = 18;
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
@@ -73,8 +73,8 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 } // parameters
 
 //TODO Put here the name of your currency
-const char     CRYPTONOTE_NAME[]                             = "narutocoin";
-const char GENESIS_COINBASE_TX_HEX[]                         = "013c01ff000194d6dfe592e901029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101ae595103ac527ec43982c58fd9b1ebd50a6cb052c0d53ea71fe279ffad872b70";
+const char     CRYPTONOTE_NAME[]                             = "kurumin";
+const char GENESIS_COINBASE_TX_HEX[]                         = "";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
@@ -85,9 +85,9 @@ const size_t   BLOCKS_SYNCHRONIZING_DEFAULT_COUNT            =  200;    //by def
 const size_t   COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT         =  1000;
 
 //TODO This port will be used by the daemon to establish connections with p2p network
-const int      P2P_DEFAULT_PORT                              = 18441;
+const int      P2P_DEFAULT_PORT                              = 18541;
 //TODO This port will be used by the daemon to interact with simlewallet
-const int      RPC_DEFAULT_PORT                              = 19441;
+const int      RPC_DEFAULT_PORT                              = 18542;
 
 const size_t   P2P_LOCAL_WHITE_PEERLIST_LIMIT                =  1000;
 const size_t   P2P_LOCAL_GRAY_PEERLIST_LIMIT                 =  5000;
@@ -102,11 +102,11 @@ const uint32_t P2P_DEFAULT_CONNECTION_TIMEOUT                = 5000;          //
 const uint32_t P2P_DEFAULT_PING_CONNECTION_TIMEOUT           = 2000;          // 2 seconds
 const uint64_t P2P_DEFAULT_INVOKE_TIMEOUT                    = 60 * 2 * 1000; // 2 minutes
 const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000;          // 5 seconds
-const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "85fd4a59ab29043db857b761dd8b5b5f0c9e9a3727bca767732ed65093548386";
+const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "051b10c2-95ed-e244-bc0a-c75bfd3440eb";
 
 //TODO Add here your network seed nodes| jesse, here
 const std::initializer_list<const char*> SEED_NODES = {
-  "18.221.58.255:18441",
+  "kurumin.gq:18541",
   //"your_seed_ip2.com:8080",
 };
 
